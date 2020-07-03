@@ -8,15 +8,15 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Bienvenue dans l'application demo de Gabin
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://www.youtube.com/channel/UCX59_d3qQWm4WQsVfUDO-Kw"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Voici sa chaine YouTube
         </a>
       </header>
     </div>
