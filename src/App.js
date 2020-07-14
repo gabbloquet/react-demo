@@ -3,14 +3,18 @@ import './App.css';
 import {Homepage} from "./Homepage";
 
 function App() {
+
+  const number = 90;
+  const string = 'Coucou, je suis la fameuse chaine de caractère';
+
   return (
     <div className="App">
-      <header className="header">
+      <div className="topbar">
         <h2>Je suis le header</h2>
-      </header>
-      <body>
-        <Homepage/>
-      </body>
+      </div>
+      <div className="body">
+        <Homepage theGivenNumber={number} theGivenString={string}/>
+      </div>
     </div>
   );
 }

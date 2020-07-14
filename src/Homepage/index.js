@@ -1,7 +1,7 @@
 import React from 'react';
 import './Homepage.style.css'
 
-export const Homepage = () => {
+export const Homepage = ({theGivenNumber, theGivenString}) => {
   return (
     <div className="homepage">
       <h1>
@@ -15,6 +15,8 @@ export const Homepage = () => {
       >
         Voici sa chaine YouTube
       </a>
+      <h2>Le nombre sera affiché ici : {theGivenNumber}</h2>
+      <h2>La string sera affiché ici : {theGivenString}</h2>
     </div>
   );
 }

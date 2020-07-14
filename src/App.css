@@ -2,6 +2,7 @@
   text-align: center;
 }
 
-.header {
+.topbar {
   background: darkgrey;
+  height: 3em;
 }
