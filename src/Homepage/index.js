@@ -1,7 +1,17 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import './Homepage.style.css'
 
 export const Homepage = ({theGivenNumber, theGivenString, modifyParentStateValue}) => {
+  const [compteur, setCompteur] = useState(0);
+  const [double, setDouble] = useState(0);
+  const [sayCongratulations, setSayCongratulations] = useState(false);
+
+  useEffect(() => {
+    setDouble(compteur * 2);
+    if(compteur >= 10)
+      setSayCongratulations(true);
+  }, [compteur])
+
   return (
     <div className="homepage">
       <h2>Le nombre sera affiché ici : {theGivenNumber}</h2>
@@ -11,6 +21,19 @@ export const Homepage = ({theGivenNumber, theGivenString, modifyParentStateValue
         type="number"
         placeholder="Entrez ici une valeur pour modifier la valeur du parent"
         onChange={(e) => modifyParentStateValue(e.target.value)}/>
+
+      <hr/>
+
+      <h1>Voici notre nouveau compteur : {compteur}</h1>
+      <h2>Voici la valeur du double de notre compteur : {double}</h2>
+      <div className="div-increment">
+        <button onClick={() => setCompteur(compteur + 1)}>
+          Cliquez ici pour incrémenter le compteur
+        </button>
+      </div>
+      { sayCongratulations ? (
+        <h1 className="congratulations-message">CONGRATULATIONS !</h1>
+      ) : null}
     </div>
   );
 }

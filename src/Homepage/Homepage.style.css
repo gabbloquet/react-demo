@@ -1,3 +1,8 @@
 .homepage {
     height: 100%;
 }
+
+.congratulations-message {
+    color: red;
+    font-weight: bolder;
+}
