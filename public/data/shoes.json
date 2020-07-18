@@ -1,0 +1,9 @@
+[
+  { brand: 'Nike', name: 'Air MAX 90', year: 2010 },
+  { brand: 'Nike',name: 'Zoom Fly 3', number: 2019 },
+  { brand: 'Nike',name: 'Lebron 17 Low', number: 2020 },
+  { brand: 'Nike',name: 'Pegasus 37', number: 2019 },
+  { brand: 'Nike',name: 'Kiger 6', number: 2019},
+  { brand: 'Adidas',name: 'Stan smith', number: 2017},
+  { brand: 'Adidas',name: 'Superstar', number: 2019},
+]
