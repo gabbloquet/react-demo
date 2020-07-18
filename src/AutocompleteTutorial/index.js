@@ -1,8 +1,7 @@
 import React, {useState} from 'react';
-import {ShoesResearcher} from "./containers/ShoesResearcher";
-import './Homepage.style.css'
+import {ShoesResearcher} from "./AutocompleteComponent";
 
-export const Homepage = () => {
+export const AutocompleteTutorial = () => {
   const [selectedShoes, setSelectedShoes] = useState(null);
 
   return (

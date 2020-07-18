@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 
-export const States = ({theGivenNumber, theGivenString, modifyParentStateValue}) => {
+export const Child = ({theGivenNumber, theGivenString, modifyParentStateValue}) => {
   const [compteur, setCompteur] = useState(0);
   const [double, setDouble] = useState(0);
   const [sayCongratulations, setSayCongratulations] = useState(false);
