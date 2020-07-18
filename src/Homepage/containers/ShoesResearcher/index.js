@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import Autosuggest from 'react-autosuggest'
-import {getSuggestions} from "./Autocomplete.service";
+import {getSuggestions} from "./ShoesResearcher.service";
+import './ShoesResearcher.style.css'
 
 const shoes = [
   { brand: 'Nike', name: 'Air MAX 90', year: 2010 },
@@ -13,13 +14,11 @@ const shoes = [
   { brand: 'Adidas', name: 'Superstar', year: 2019},
 ];
 
-export const ShoesResearcher = () => {
+export const ShoesResearcher = ({setSelectedShoes}) => {
   const [research, setResearch] = useState('');
   const [suggestions, setSuggestions] = useState([]);
-  const [selectedShoes, setSelectedShoes] = useState(null);
 
   const onChange = (event, {newValue}) => setResearch(newValue);
-
   const onSuggestionsFetchRequested = ({ value }) => setSuggestions(getSuggestions(value, shoes));
   const onSuggestionsClearRequested = () => setSuggestions([]);
   const onSuggestionSelected = (_, { suggestion }) => setSelectedShoes(suggestion);
@@ -47,9 +46,6 @@ export const ShoesResearcher = () => {
         renderSuggestion={renderSuggestion}
         inputProps={inputProps}
       />
-      { selectedShoes ? (
-        <p>La chaussure que vous avez selectionnée : {selectedShoes.brand} {selectedShoes.name}</p>
-      ) : null}
     </div>
   )
 }

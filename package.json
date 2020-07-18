@@ -32,6 +32,7 @@
     ]
   },
   "devDependencies": {
+    "fuse.js": "^6.4.0",
     "react-autosuggest": "^10.0.2"
   }
 }
