@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
-import {Child} from "./child";
+import {Child} from "../useEffect";
 
-export const HooksTutorial = () => {
+export const UseStateTutorial = () => {
   const [stateNumber, setStateNumber] = useState(0);
   const number = 90;
   const string = 'Coucou, je suis la fameuse chaine de caractère';

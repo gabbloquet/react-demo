@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import {UseReducerTutorial} from "./HooksTutorial/UseReducer";
 
 function App() {
   return (
@@ -9,8 +10,9 @@ function App() {
       </div>
       <div className="body">
         {/* TODO: Decomment tutorial you want to see and import it ;) */}
-        {/*<HooksTutorial/>*/}
+        {/*<UseStateTutorial/>*/}
         {/*<AutocompleteTutorial/>*/}
+        <UseReducerTutorial />
       </div>
     </div>
   );

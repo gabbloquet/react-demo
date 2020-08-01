@@ -11,3 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+button {
+  margin: 1em;
+  padding: 1em;
+  border: 1px solid dodgerblue;
+  border-radius: 3px;
+  color: dodgerblue;
+  background-color: white;
+}
+
+h1 {
+  color: cornflowerblue;
+}
+
+p {
+  color: forestgreen;
+}
