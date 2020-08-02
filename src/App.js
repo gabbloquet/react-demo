@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import {UseReducerTutorial} from "./HooksTutorial/UseReducer";
+import {UseContextTutorial} from "./HooksTutorial/useContext";
 
 function App() {
   return (
@@ -12,7 +12,8 @@ function App() {
         {/* TODO: Decomment tutorial you want to see and import it ;) */}
         {/*<UseStateTutorial/>*/}
         {/*<AutocompleteTutorial/>*/}
-        <UseReducerTutorial />
+        {/*<UseReducerTutorial />*/}
+        <UseContextTutorial />
       </div>
     </div>
   );
