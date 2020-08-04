@@ -1,23 +1,22 @@
-import React, {useState} from 'react';
-import {Step1} from "./Step1";
-import {Step2} from "./Step2";
-import {Step3} from "./Step3";
+import React, {useReducer} from 'react';
+import {Step1} from "./steps/Step1";
+import {Step2} from "./steps/Step2";
+import {Step3} from "./steps/Step3";
+import {formReducer, formState} from "./useContext.service";
+
 
 const initialState = {
   form: null,
-  page: null,
-  setForm: () => undefined,
-  setPage: () => undefined
+  formDispatcher: () => undefined,
 }
 
 export const FormContext = React.createContext(initialState);
 
 export const UseContextTutorial = () => {
-  const [form, setForm] = useState({});
-  const [page, setPage] = useState('step-1');
+  const [form, formDispatcher] = useReducer(formReducer, formState);
 
   const stepToDisplay = () => {
-    switch (page) {
+    switch (form.step) {
       case "step-1":
         return <Step1 />
       case "step-2":
@@ -30,7 +29,7 @@ export const UseContextTutorial = () => {
   }
 
   return (
-    <FormContext.Provider value={{form: form, setForm: setForm, setPage: setPage}}>
+    <FormContext.Provider value={{form: form, formDispatcher: formDispatcher}}>
       {stepToDisplay()}
     </FormContext.Provider>
   );

@@ -1,5 +1,5 @@
 import React from 'react';
-import {FormContext} from "./index";
+import {FormContext} from "../index";
 
 export const Step3 = () => {
   const {form} = React.useContext(FormContext);
