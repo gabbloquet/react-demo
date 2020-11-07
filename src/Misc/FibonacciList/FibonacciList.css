@@ -1,0 +1,8 @@
+.fibonnaci-style {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.fibonnaci-style > p {
+    padding: 1em;
+}
