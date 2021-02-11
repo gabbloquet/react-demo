@@ -1,10 +1,16 @@
 import React from 'react';
 import './App.css';
-import FibonnaciList from "./Misc/FibonacciList";
+import ErrorBoundaryTester from "./ErrorBoundary";
 
 function App() {
   return (
     <div className="App">
+      {/*<Header />*/}
+      {/*<CharactersShowcase />*/}
+
+
+
+
       <div className="topbar">
         <h2>Hi folks !</h2>
       </div>
@@ -14,7 +20,8 @@ function App() {
         {/*<AutocompleteTutorial/>*/}
         {/*<UseReducerTutorial />*/}
         {/*<UseContextTutorial />*/}
-        <FibonnaciList />
+        {/*<FibonnaciList />*/}
+        <ErrorBoundaryTester />
       </div>
     </div>
   );
